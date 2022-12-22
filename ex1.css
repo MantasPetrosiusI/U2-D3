@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+}
+header, footer {  
+    background: #111023;
+    color: white;
+    height: 18vh;
+}
+header, footer,
+article, nav, 
+aside {
+    padding: 1em;
+}
+#container{
+    display: flex;
+    flex: 1;
+}
+article{
+    flex:1;
+    order:1;
+}
+nav, aside {
+    flex: 0 0 20vw;
+}
+aside{
+    background-color: #320388;
+    color: white;
+    order: 2;
+}
+nav{
+    background-color:  #c22177;
+    color: white;
+    order: 3;
+}
+

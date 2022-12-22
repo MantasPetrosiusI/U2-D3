@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    
+}
+header, footer {  
+    background: #111023;
+    color: white;
+    height: 18vh;
+}
+header, footer,
+article, nav, 
+aside {
+    padding: 1em;
+}
+#container{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+nav{
+    width: 15%;
+}
+#inner-container{
+    display: flex;
+    flex: 1;
+}
+#inner-container>article{
+    flex:1;
+    order:1;
+}
+
+#inner-container>aside {
+    flex: 0 0 20vw;
+}
+#inner-container>aside{
+    background-color: #320388;
+    color: white;
+    order: 2;
+}
+nav{
+    background-color:  #c22177;
+    color: white;
+}
+
